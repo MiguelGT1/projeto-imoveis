@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Adicionar Fotos</title>
+</head>
+
+<body>
+
+  <div class="container-imoveis">
+    
+    <h1>Adicionar Fotos do Imóvel</h1>
+
+    <form class="fotos-form">
+      
+      <label for="file" class="custom-file-upload">
+        <i class="fas fa-cloud-upload-alt"></i> Escolha as fotos
+      </label>
+
+      <input type="file" name="files[]" id="file" multiple accept="image/*" onchange="previewImages(event)">
+
+      <div class="image-preview" id="imagePreview"></div>
+
+      <a href="index.html"><button type="button" class="upload-button">Enviar Fotos</button></a>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
