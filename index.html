@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="/css/style.css">
-    <title>Login</title>
+    
+    <title>Cadastro</title>
 </head>
-
-<body>
+<body>   
     <main id="container">
         <form id="login_form">
             <!-- FORM HEADER -->
             <div id="form_header">
-                <h1>Login</h1>
+                <h1>Cadastre-se</h1>
             </div>
 
             <!-- SOCIAL MEDIA LINKS 
@@ -25,11 +24,32 @@
                 <a href="#">
                     <img src="img/google.png" alt="Google logo">
                 </a>
-            </div> -->
-
+            
+            </div>
+        -->
             <!-- INPUTS -->
             <div id="inputs">
-
+                <!-- NAME -->
+                <div class="input-box">
+                    <label for="name">
+                        Nome completo
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                 <!-- telefone -->
+                 <div class="input-box">
+                    <label for="email">
+                        Telefone
+                        <div class="input-field">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="number" id="number" name="telefone">
+                        </div>
+                    </label>
+                </div>
+                
                 <!-- EMAIL -->
                 <div class="input-box">
                     <label for="email">
@@ -40,7 +60,7 @@
                         </div>
                     </label>
                 </div>
-
+                
                 <!-- PASSWORD -->
                 <div class="input-box">
                     <label for="password">
@@ -50,23 +70,23 @@
                             <input type="password" id="password" name="password">
                         </div>
                     </label>
-
+                    
+                    <!-- FORGOT PASSWORD -->
+                    <div id="forgot_password">
+                        <a href="/html/login.html">
+                            Já tenho cadastro!
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- LOGIN BUTTON -->
-            <button type="submit" id="login_button">
-                Entrar
-            </button>
+            
+           <a href="/html/login.html"><button type="button" id="login_button">Entrar</button></a>
         </form>
     </main>
 
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="script.js"></script>
 </body>
-
-</html>
-
-</body>
-
 </html>
