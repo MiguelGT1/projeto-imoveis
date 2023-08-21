@@ -108,6 +108,8 @@
     color: var(--color-dark-50);
 }
 
+
+
 .input-field {
     display: flex;
     align-items: center;
@@ -156,6 +158,7 @@
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+    margin-top: -30px;
 }
 
 #login_button:hover {
@@ -264,6 +267,22 @@ body {
     margin-bottom: 1.1rem;
 }
 
+/*valor do IMÓVEL*/
+/*valor do IMÓVEL*/
+.input-valor>label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.input-valor input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 1.3rem;
+}
+
 .input-box input {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
@@ -355,9 +374,9 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* Adicione ou atualize essa regra CSS */
-.preview-image {
+.preview-image{
   max-width: 100px; /* Defina a largura máxima desejada */
-  max-height: 100px; /* Defina a altura máxima desejada */
+  max-height: 200px; /* Defina a altura máxima desejada */
   margin: 5px;
 }
 .fotos-form a{

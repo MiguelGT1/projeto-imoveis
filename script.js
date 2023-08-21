@@ -19,3 +19,6 @@ function previewImages(event) {
     reader.readAsDataURL(file);
   }
 }
+
+
+

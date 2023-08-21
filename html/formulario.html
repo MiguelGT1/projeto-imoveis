@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script>
+        //valor input
+        function formatCurrency(input) {
+          var value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+    
+          if (value === '') {
+            input.value = '';
+            return;
+          }
+    
+          var formattedValue = (parseFloat(value) / 100).toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+          });
+    
+          input.value = formattedValue;
+        }
+      </script>
     <title>Formulário</title>
 </head>
 
@@ -33,16 +53,10 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="firstname">Descreva o tamanho de cada cômodo</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Tamanho de cada cômodo" required>
-                    </div>
-
-                    <div class="input-box">
                         <label for="firstname">É decorado Sim/Não?</label>
                         <input id="firstname" type="text" name="firstname" placeholder="O imóvel é decorado?" required>
                     </div>
 
-    
 
                     <div class="input-box">
                         <label for="lastname">Localização do Imóvel</label>
@@ -51,7 +65,7 @@
                     
                     <div class="input-box">
                         <label for="number">Valor do condômino</label>
-                        <input id="number" type="tel" name="number" placeholder="Valor do condômino R$" required>
+                        <input id="number" type="tel" name="number" placeholder="Valor do condômino" required>
                     </div>
 
                     <div class="input-box">
@@ -60,9 +74,19 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">Bairro</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite o bairro" required>
+                        <label for="lastname">IPTU</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Valor do IPTU" required>
                     </div>
+
+                    <div class="input-box">
+                        <label for="firstname">Descrição</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="ex: piscina,quadra" required>
+                    </div>
+
+                    <div class="input-valor">
+                        <label for="valor">Valor do Imóvel</label>
+                        <input id="valor" type="text" name="valor" placeholder="Digite o valor" oninput="formatCurrency(this)" required>
+                      </div>
 
 
                 </div>
@@ -73,6 +97,7 @@
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
