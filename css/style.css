@@ -11,14 +11,14 @@
     --color-light-50: #f8fafc;
 
     /* Dark */
-    --color-dark-50: #797984;
-    --color-dark-100: #312d37;
+    --color-dark-50: #847979;
+    --color-dark-100: #eeeaf3;
     --color-dark-900: #000;
 
     /* Purple */
-    --color-purple-50: #7c3aed;
-    --color-purple-100: #a855f7;
-    --color-purple-200: #bf46ef;
+    --color-purple-50: #4aacee;
+    --color-purple-100: #2b6ead;
+    --color-purple-200: #4171f3;
 
     /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
@@ -433,41 +433,75 @@ label.custom-file-upload:hover {
 
 /*RESPONSIVO*/
 
+
 @media screen and (max-width: 1330px) {
+    body{
+        overflow-x: hidden;
+    }
     .form-image {
         display: none;
     }
     .container {
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
     .form {
         width: 100%;
     }
 }
+@media screen and (max-width: 1015px){
+     body{
+        overflow-x: hidden;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .title h1{
+        margin-left: -40px;
+    }
+    .input-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 425px){
+     body{
+        overflow-x: hidden;
+    }
+    
+    .container{
+        width: 80%;
+    }
+    .title h1{
+        font-size: 1.2rem;
+        margin-left: -100px;
+    }
+}
 
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-    .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-    }
-    .gender-inputs {
-        margin-top: 2rem;
-    }
-    .gender-group {
-        flex-direction: column;
-    }
-    .gender-title h6 {
-        margin: 0;
-    }
-    .gender-input {
-        margin-top: 0.5rem;
-    }
+@media screen and (max-width: 390px){
+    body{
+       overflow-x: hidden;
+   }
+   .form{
+   position: relative;
+    top: 70px;
+   }
+   .container{
+       width: 80%;
+   }
+   .title h1{
+       font-size: 1.2rem;
+       margin-left: -100px;
+   }
 }
